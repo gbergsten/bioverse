@@ -20,7 +20,7 @@ CATALOG_FILE = DATA_DIR+'Gaia.csv'
 FUNCTIONS_DIR = ROOT_DIR+'/functions/'
 
 # Program version
-VERSION = "1.0"
+VERSION = "1.1.1"
 
 # Physical constants (in cgs where applicable)
 CONST = {}
@@ -34,11 +34,12 @@ CONST['R_Earth'] = 6.371e8
 CONST['R_Sun'] = 6.9634e10
 CONST['h_Earth'] = 8.5e5
 CONST['P_Earth'] = 101325.
+CONST['S_Earth'] = 238.         # global-averaged, top-of-atmosphere insolation of Earth in W/m2. Scaled by an assumed albedo of 0.3.
 
 # Data types
 ARRAY_TYPES = (np.ndarray,list,tuple)
 LIST_TYPES = ARRAY_TYPES
-FLOAT_TYPES = (float,np.float,np.float_,np.float64)
+FLOAT_TYPES = (float,np.double,np.float_,np.float64)
 INT_TYPES = (int,np.int_,np.int64,np.integer,np.int8)
 STR_TYPES = (str,np.str_)
 BOOL_TYPES = (bool,np.bool_)
